@@ -1,6 +1,6 @@
-const chalk = require('chalk');
-
-module.exports = `
+import chalk from 'chalk';
+export function displayBanner() {
+    console.log(chalk.cyan(`
         ███████╗ █████╗ ███╗   ███╗ ██████╗
         ██╔════╝██╔══██╗████╗ ████║██╔════╝
         ███████╗███████║██╔████╔██║██║
@@ -15,5 +15,7 @@ module.exports = `
         ╚██████╔╝██║ ═████║
          ╚═════╝ ╚═╝  ╚═══╝
 
-            ${chalk.yellow('Singulabs  AUTO - BOT')}                
-📢  ${chalk.yellow('Telegram Channel: https://t.me/Samcvn')}`;
+            ${chalk.yellow('KALEIDO AUTO REFF - BOT')}                
+     📢  ${chalk.blue('Telegram Channel: https://t.me/samcvn')}
+    `));
+}
